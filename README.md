@@ -48,7 +48,16 @@ Manasa: add details about installing from git
 
 ## Usage
 ```
-TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--cohortdataset COHORTDATASET] [--peptide_list PEPTIDE_LIST] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]
+TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL
+[--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING]
+[--cohortdataset COHORTDATASET] [--peptide_list PEPTIDE_LIST]
+[--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE]
+[--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD]
+[--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD]
+[--target_deviation_threshold TARGET_DEVIATION_THRESHOLD]
+[--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET]
+[--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD]
+[--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]
 ```
 
 ### Running TEAQ via Command-Line
