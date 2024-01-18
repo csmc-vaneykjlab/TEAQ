@@ -46,7 +46,7 @@ These peptides or precursors are extracted from cohort datasets, where they meet
 
 TEAQ can be downloaded from this Github page directly or through command-line using `git`. 
 
-To download it directly, click on the Blue code button and click on "Download ZIP". 
+To download it directly, click on the blue code button at the top right and click on "Download ZIP". 
 
 To download it via command-line, clone the repository from GitHub:
 
