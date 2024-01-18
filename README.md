@@ -15,7 +15,7 @@ A software package developed for performing targeted extraction of quality pepti
 
 ### TEAQ Workflow
 
-<Insert Workflow Image here>
+Manasa: Insert Workflow Image here
 
 TEAQ can be used to identify and extract the following set of peptides and precursors from your dataset:
 
