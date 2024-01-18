@@ -82,11 +82,7 @@ TEAQ.exe --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL
 Example Command: 
 
 ```
-TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor
---loading_curve example_inputs/loadingcurve_dataset.txt --samplemapping example_inputs/samplemapping_file.txt
---observation_threshold_per_conc 0.6 --cv_perc_threshold 20 
---min_conc_for_linearresponse 3 --r_squared_threshold 0.8
---target_deviation_threshold 0.2
+TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --loading_curve example_inputs/loadingcurve_dataset.txt --samplemapping example_inputs/samplemapping_file.txt --observation_threshold_per_conc 0.6 --cv_perc_threshold 20 --min_conc_for_linearresponse 3 --r_squared_threshold 0.8 --target_deviation_threshold 0.2
 ```
 
 ##### For Identifying Signature Peptides/Precursors
@@ -102,11 +98,7 @@ TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL
 Example Command: 
 
 ```
-TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor
---cohortdataset example_inputs/cohortdataset.txt --precursor_list example_inputs/quantifiable_precursors_list.txt
---fasta_file example_inputs/202106_human_iRT_canonical_isoform_UP000005640_reviewed.fasta
---observation_threshold_across_dataset 0.2 --correlation_coefficient_threshold 0.7
---num_allowed_miscleavages 0 --enzyme Trypsin
+TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --cohortdataset example_inputs/cohortdataset.txt --precursor_list example_inputs/quantifiable_precursors_list.txt --fasta_file example_inputs/202106_human_iRT_canonical_isoform_UP000005640_reviewed.fasta --observation_threshold_across_dataset 0.2 --correlation_coefficient_threshold 0.7 --num_allowed_miscleavages 0 --enzyme Trypsin
 ```
 
 ## Input File Description
