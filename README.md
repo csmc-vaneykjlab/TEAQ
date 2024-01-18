@@ -48,24 +48,24 @@ Manasa: add details about installing from git
 
 ## Usage
 
-`TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--cohortdataset COHORTDATASET] [--peptide_list PEPTIDE_LIST] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]`
+```TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--cohortdataset COHORTDATASET] [--peptide_list PEPTIDE_LIST] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]```
 
 ### Running TEAQ for Identifying Quantifiable Peptides/Precursors 
 
-`TEAQ.exe --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD]`
+```TEAQ.exe --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD]```
 
 Example Command: 
 
-`TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --loading_curve example_inputs/loadingcurve_dataset.txt --samplemapping example_inputs/samplemapping_file.txt --observation_threshold_per_conc 0.6 --cv_perc_threshold 20 
---min_conc_for_linearresponse 3 --r_squared_threshold 0.8 --target_deviation_threshold 0.2`
+```TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --loading_curve example_inputs/loadingcurve_dataset.txt --samplemapping example_inputs/samplemapping_file.txt --observation_threshold_per_conc 0.6 --cv_perc_threshold 20 
+--min_conc_for_linearresponse 3 --r_squared_threshold 0.8 --target_deviation_threshold 0.2```
 
 ### Running TEAQ for Identifying Signature Peptides/Precursors
 
-`TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--cohortdataset COHORTDATASET] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]`
+```TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--cohortdataset COHORTDATASET] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]```
 
 Example Command: 
 
-`TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --cohortdataset example_inputs/cohortdataset.txt --precursor_list example_inputs/quantifiable_precursors_list.txt --fasta_file example_inputs/202106_human_iRT_canonical_isoform_UP000005640_reviewed.fasta --observation_threshold_across_dataset 0.2 --correlation_coefficient_threshold 0.7 --num_allowed_miscleavages 0 --enzyme Trypsin` 
+```TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --cohortdataset example_inputs/cohortdataset.txt --precursor_list example_inputs/quantifiable_precursors_list.txt --fasta_file example_inputs/202106_human_iRT_canonical_isoform_UP000005640_reviewed.fasta --observation_threshold_across_dataset 0.2 --correlation_coefficient_threshold 0.7 --num_allowed_miscleavages 0 --enzyme Trypsin```
 
 ## Input File Description
 
