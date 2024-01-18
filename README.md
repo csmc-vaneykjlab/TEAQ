@@ -50,7 +50,16 @@ Manasa: add details about installing from git
 
 `TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--cohortdataset COHORTDATASET] [--peptide_list PEPTIDE_LIST] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]`
 
-### Running TEAQ for Identifying Quantifiable Peptides/Precursors 
+### Running TEAQ via Command-Line
+
+After downloading the executable, open command prompt on your Windows system: 
+- Press Windows Key + R to open the Run dialog.
+- Type cmd and press Enter.
+- Use the cd command to change the directory to where the downloaded TEAQ executable is located. 
+  `cd path/to/directory`
+- Run the executable and provide input files and arguments (refer to the example commands below)
+
+##### For Identifying Quantifiable Peptides/Precursors:  
 
 `TEAQ.exe --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--loading_curve LOADING_CURVE] [--samplemapping SAMPLEMAPPING] [--observation_threshold_per_conc OBSERVATION_THRESHOLD_PER_CONC] [--cv_perc_threshold CV_PERC_THRESHOLD] [--min_conc_for_linearresponse MIN_CONC_FOR_LINEARRESPONSE] [--r_squared_threshold R_SQUARED_THRESHOLD] [--target_deviation_threshold TARGET_DEVIATION_THRESHOLD]`
 
@@ -59,7 +68,7 @@ Example Command:
 `TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --loading_curve example_inputs/loadingcurve_dataset.txt --samplemapping example_inputs/samplemapping_file.txt --observation_threshold_per_conc 0.6 --cv_perc_threshold 20 
 --min_conc_for_linearresponse 3 --r_squared_threshold 0.8 --target_deviation_threshold 0.2`
 
-### Running TEAQ for Identifying Signature Peptides/Precursors
+##### For Identifying Signature Peptides/Precursors
 
 `TEAQ.exe [-h] --outdirectory OUTDIRECTORY --reportname REPORTNAME --level LEVEL [--cohortdataset COHORTDATASET] [--precursor_list PRECURSOR_LIST] [--fasta_file FASTA_FILE] [--observation_threshold_across_dataset OBSERVATION_THRESHOLD_ACROSS_DATASET] [--correlation_coefficient_threshold CORRELATION_COEFFICIENT_THRESHOLD] [--num_allowed_miscleavages NUM_ALLOWED_MISCLEAVAGES] [--enzyme ENZYME]`
 
