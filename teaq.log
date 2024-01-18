@@ -1,0 +1,19 @@
+INFO:root:Checking provided grouping file: example_inputs/samplemapping_file.txt
+INFO:root:Quantifiable Precursors will be reported using the following inputs and parameters: 
+                        Loading Curve Dataset: example_inputs/loadingcurve_dataset.txt, 
+                        Sample Mapping File: example_inputs/samplemapping_file.txt, 
+                        Observation Threshold for each Concentration : 0.6, 
+                        CV % Threshold : 20, 
+                        Minimum number of contrations for Linear Response : 3, 
+                        R-Squared Threshold : 0.8, 
+                        Target Deviation Threshold : 0.2
+INFO:root:--- Runtime: 495.3360929489136 seconds ---
+INFO:root:Signature Precursors will be reported using the following inputs and parameters: 
+                            Cohort Dataset: example_inputs/cohortdataset.txt, 
+                            Precursor List File: example_inputs/quantifiable_precursors_list.txt, 
+                            Fasta File: example_inputs/202106_human_iRT_canonical_isoform_UP000005640_reviewed.fasta, 
+                            Observation Threshold Across Dataset: 0.2, 
+                            Correlation Coefficient Threshold: 0.7, 
+                            Digestion Enzyme : trypsin, 
+                            Number of Allowed Miscleavages : 0
+INFO:root:--- Runtime: 377.9267506599426 seconds ---
