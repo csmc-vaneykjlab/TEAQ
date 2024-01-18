@@ -44,7 +44,13 @@ These peptides or precursors are extracted from cohort datasets, where they meet
 
 ## Installation
 
-Manasa: add details about installing from git
+TEAQ can be downloaded from this Github page directly or through command-line using `git`. 
+
+To download it directly, click on the Blue code button and click on "Download ZIP". 
+
+To download it via command-line, clone the repository from GitHub:
+
+`git clone https://github.com/csmc-vaneykjlab/TEAQ.git`
 
 ## Usage
 ```
