@@ -15,7 +15,7 @@ A software package developed for performing targeted extraction of quality pepti
 
 ### TEAQ Workflow
 
-Manasa: Insert Workflow Image here
+![MicrosoftTeams-image (2)](https://github.com/csmc-vaneykjlab/TEAQ/assets/87665957/4d3bc8fb-11c4-469b-a3a8-092a70453049)
 
 TEAQ can be used to identify and extract the following set of peptides and precursors from your dataset:
 
