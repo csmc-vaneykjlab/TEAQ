@@ -344,7 +344,7 @@ See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/outputs/ExampleTe
 
 ## Support
 
-If you encounter any bugs or issues, please help us improve PINE by creating a new issue at: https://github.com/csmc-vaneykjlab/TEAQ/issues. For any other queries, email us at GroupHeartBioinformaticsSupport@cshs.org.
+If you encounter any bugs or issues, please help us improve TEAQ by creating a new issue at: https://github.com/csmc-vaneykjlab/TEAQ/issues. For any other queries, email us at GroupHeartBioinformaticsSupport@cshs.org.
 
 ## release notes
 
