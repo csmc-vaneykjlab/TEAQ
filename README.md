@@ -123,8 +123,6 @@ Peptide-Level Loading Curve Dataset:
 | Peptide           | A column containing Peptide Ids      |
 | < list of sample names >             | a list of sample names as headers followed by their intensity values     |
 
-See Example:
-
 Precursor-Level Loading Curve Dataset:
 
 | Column                | Description |
@@ -134,7 +132,7 @@ Precursor-Level Loading Curve Dataset:
 | Precursor           | A column containing Precursor Ids      |
 | < list of sample names >             | a list of sample names as headers followed by their intensity values     |
 
-See Example:
+See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/example_inputs/loadingcurve_dataset.txt
 
 #### Sample Mapping File
 
@@ -145,7 +143,7 @@ A file containing concentration labels for all samples present in the provided l
 | Sample Name           | A column containing sample names      |
 | Label            | Concentration value the sample belongs to (only numbers allowed) |
 
-See Example:
+See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/example_inputs/samplemapping_file.txt
 
 ### Inputs for Signature Peptides or Precursors
 
@@ -153,7 +151,7 @@ See Example:
 
 Peptide or Precursor-level Intensity Search result in .txt wide format with columns as samples.
 
-Peptide-Level Loading Curve Dataset:
+Peptide-Level Cohort Dataset:
 
 | Column                | Description |
 |--------------------------|------------|
@@ -161,9 +159,7 @@ Peptide-Level Loading Curve Dataset:
 | Peptide           | A column containing Peptide Ids      |
 | < list of sample names >             | a list of sample names as headers followed by their intensity values     |
 
-See Example:
-
-Precursor-Level Loading Curve Dataset:
+Precursor-Level Cohort Dataset:
 
 | Column                | Description |
 |--------------------------|------------|
@@ -172,7 +168,7 @@ Precursor-Level Loading Curve Dataset:
 | Precursor           | A column containing Precursor Ids      |
 | < list of sample names >             | a list of sample names as headers followed by their intensity values     |
 
-See Example:
+See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/example_inputs/cohortdataset.txt
 
 #### Peptide or Precursor List
 
@@ -184,15 +180,13 @@ Peptide List:
 |--------------------------|------------|
 | Peptide           | A column containing Peptide Ids      |
 
-See Example:
-
 Precursor List:
 
 | Column                | Description |
 |--------------------------|------------|
 | Precursor           | A column containing Precursor Ids      |
 
-See Example:
+See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/example_inputs/quantifiable_precursors_list.txt
 
 ## Input parameters
 
@@ -289,7 +283,7 @@ A table containing protein, peptide and precursor numbers from loading curve dat
 | Total           | A column containing numbers from across the LLOQ filtered dataset      |
 | < list of concentration labels >             | a list of concentration labels as headers followed by the corresponding numbers     |
 
-See Example:
+See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/outputs/ExampleTest1_Quantifiable_Precursors.xlsx
 
 ### Signature Peptides or Precursors Report
 
@@ -344,10 +338,17 @@ A table containing identified signature peptides or precursors along with the pe
 | Peptide/Precursor List Filter | A column containing numbers from across the provided list filtered dataset    |
 | Signature Peptides/Precursors | A column containing numbers from across the signature peptides/precursors filtered dataset    |
 
-See Example:
+See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/outputs/ExampleTest1_Signature_Precursors.xlsx
 
 ## Cite
 
 ## Support
 
+If you encounter any bugs or issues, please help us improve PINE by creating a new issue at: https://github.com/csmc-vaneykjlab/TEAQ/issues. For any other queries, email us at GroupHeartBioinformaticsSupport@cshs.org.
+
 ## release notes
+
+Version 1.0
+- Initial version released.
+- Loading Curve Dataset or Cohort Dataset Peptide/Precursor Intensity Files required. 
+- Identifies quantitative and signature peptides or precursors
