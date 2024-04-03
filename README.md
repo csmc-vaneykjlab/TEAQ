@@ -9,9 +9,10 @@ A software package developed for performing targeted extraction of quality pepti
 5. [Input File Description](#input-file-description)
 6. [Input Parameters](#input-parameters)
 7. [Output Excel Reports](#outputs-and-explanations)
-8. [Cite](#Cite)
-9. [Contributions](#contributions)
-10. [Release Notes](#release-notes)
+8. [License](#Liscense)
+9. [Cite](#Cite)
+10. [Contributions](#contributions)
+11. [Release Notes](#release-notes)
 
 ### TEAQ Workflow
 
@@ -334,7 +335,13 @@ A table containing identified signature peptides or precursors along with the pe
 
 See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/outputs/ExampleTest1_Signature_Precursors.xlsx
 
+## License
+
+This work is licensed under CC BY-NC-ND 4.0. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
 ## Cite
+
+Fu Q, Vegesna M, Sundararaman N, Damoc E, Arrey TN, Pashkova A, Mengesha E, Debbas P, Joung S, Li D, Cheng S, Braun J, McGovern DPB, Murray C, Xuan Y, Eyk JEV. Paradigm shift in biomarker translation: a pipeline to generate clinical grade biomarker candidates from DIA-MS discovery. bioRxiv [Preprint]. 2024 Mar 22:2024.03.20.586018. doi: 10.1101/2024.03.20.586018. PMID: 38562888; PMCID: PMC10983901.
 
 ## Support
 
@@ -343,6 +350,6 @@ If you encounter any bugs or issues, please help us improve TEAQ by creating a n
 ## release notes
 
 Version 1.0
-- Initial version released.
+- Encrypted version released.
 - Loading Curve Dataset or Cohort Dataset Peptide/Precursor Intensity Files required. 
 - Identifies quantitative and signature peptides or precursors
