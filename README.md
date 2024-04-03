@@ -352,4 +352,4 @@ Version 1.0
 
 ## License
 
-This work is licensed under [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Targeted Evaluation and Assessment of Quality (TEAQ) © 2024 by Jennifer Van Eyk is licensed under [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
