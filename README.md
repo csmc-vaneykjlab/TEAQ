@@ -16,7 +16,14 @@ A software package developed for targeted extraction of quality peptides or prec
 
 ### TEAQ Workflow
 
-![MicrosoftTeams-image (2)](https://github.com/csmc-vaneykjlab/TEAQ/assets/87665957/4d3bc8fb-11c4-469b-a3a8-092a70453049)
+![TEAQ workflow)](https://github.com/csmc-vaneykjlab/TEAQ/assets/87665957/4d3bc8fb-11c4-469b-a3a8-092a70453049)
+
+TEAQ can be used to analyze and filter data acquired from any DIA MS instrument that has been searched and quantified using a DIA search tool. TEAQ mainly uses protein names, peptide ids, precursor charge (if provided) and respective intensity values are used for analysis and other parameters from search engine outputs are not taken into consideration. Two types of datasets can be given as input:
+1. Loading Curve Dataset:
+   This dataset contains samples acquired from different column loadings. The dataset should have 3 or more loading points for accurate estimation of ["Quantifiable Peptides/Precursors"](#quantifiable-peptides-or-precursors). All injections in the dataset (samples within a loading point as well as across loading points) should follow the sample preparation protocol and each loading point should have at least 3 injection replicates.  Across loading points, the samples are identical in sample preparation only and column loading varies  (For example, the dataset used in our [paper](https://www.biorxiv.org/content/10.1101/2024.03.20.586018v1) has 8 column loading points: 12.5ng, 25ng, 50ng, 100ng, 200ng, 300ng, 400ng, 500ng with each loading point having 5 injection replicates). The samples from each loading point need to be searched using a DIA search tool against an appropriate library. For example, in our paper, we searched samples from each loading point separately using the DIA-NN software and then combined quantification results from all loading points into one .txt file to match the input formatting requirements for TEAQ. Alternatively, the samples can be searched together if any parameters related to the ‘Match-Between-Runs (MBR)’ parameter in the search tools are turned off. Refer to [Input File Description](#input-file-description) for more input format details for the loading curve dataset.
+
+2. Cohort Dataset:
+   This dataset can be any DIA clinical cohort dataset for which ["Signature Peptides/Precursors"](#signature-peptides-or-precursors) want to be identified. In our paper, we have used a combined cohort of plasma proteomes from 205 individuals diagnosed with IBD and 287 age, sex and race matched healthy control subjects. Samples from the cohort dataset need to be searched using a DIA search tool and we recommend performing quality control analysis and correcting any batch effects identified in the quantified results before providing it as input TEAQ. Refer to [Input File Description](#input-file-description) for more input format details for the cohort dataset.
 
 TEAQ can be used to identify and extract the following set of peptides and precursors from your dataset:
 
@@ -45,7 +52,7 @@ These peptides or precursors are extracted from cohort datasets, where they meet
 
 ## Installation
 
-TEAQ can be downloaded from [here](https://github.com/csmc-vaneykjlab/TEAQ/releases). 
+Please contact [Jennifer Van Eyk](mailto:jennifer.vaneyk@cshs.org), [Qin Fu](mailto:qin.fu@cshs.org) or the [ACBRI Bioinformatics Team](mailto:GroupHeartBioinformaticsSupport@cshs.org) to get access to the TEAQ package. 
 
 ## Usage
 ```
@@ -104,11 +111,13 @@ TEAQ.exe --outdirectory ./outputs --reportname ExampleTest1 --level Precursor --
 
 ## Input File Description
 
+TEAQ can be used to analyze and filter data acquired from any DIA MS instrument that has been searched and quantified using a DIA search tool. The peptide or precursor intensity output files can be provided and need to be formatted in the way described below: 
+
 ### Inputs for Quantifiable Peptides or Precursors
 
 #### Loading Curve Dataset
 
-Peptide or Precursor-level Intensity Search result in .txt wide format with columns as samples.
+Peptide or Precursor-level Intensity DIA Search result in .txt wide format with columns as samples.
 
 Peptide-Level Loading Curve Dataset:
 
@@ -144,7 +153,7 @@ See Example: https://github.com/csmc-vaneykjlab/TEAQ/blob/main/example_inputs/sa
 
 #### Cohort Dataset
 
-Peptide or Precursor-level Intensity Search result in .txt wide format with columns as samples.
+Peptide or Precursor-level Intensity DIA Search result in .txt wide format with columns as samples.
 
 Peptide-Level Cohort Dataset:
 
