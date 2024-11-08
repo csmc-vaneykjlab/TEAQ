@@ -54,7 +54,7 @@ These peptides or precursors are extracted from cohort datasets, where they meet
 
 ## Installation
 
-Please contact [Jennifer Van Eyk](mailto:jennifer.vaneyk@cshs.org), [Qin Fu](mailto:qin.fu@cshs.org) or the [ACBRI Bioinformatics Team](mailto:GroupHeartBioinformaticsSupport@cshs.org) to get access to the TEAQ package. 
+Download and run TEAQ.exe from the latest release. Please take a look at license details before usage.
 
 ## Usage
 ```
