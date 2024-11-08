@@ -54,7 +54,7 @@ These peptides or precursors are extracted from cohort datasets, where they meet
 
 ## Installation
 
-Download and run TEAQ.exe from the latest release. Please take a look at license details before usage.
+Download and run TEAQ.exe from the latest [release](https://github.com/csmc-vaneykjlab/TEAQ/releases). Please take a look at license details before usage.
 
 ## Usage
 ```
